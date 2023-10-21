@@ -26,6 +26,7 @@ nav{
 span{
     padding: 0 0 0 4px;
     color: gold;
+    font-style: italic;
     border-top: groove thin #fff;
     border-left: groove thin #fff;
 }
@@ -120,7 +121,7 @@ button:hover{
     color: #fff;
 }
 
-img{
+.box1 img{
     width: 140px;
     margin-left: 5.3em;
     margin-top: 4em;
@@ -167,7 +168,22 @@ footer ul li:hover{
     color: gold;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 560px) {
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        color: white;
+    }
+
+    nav h2{
+        font-size: large;
+    }
+
+    nav ul li a{
+        font-size: small;
+    }
 
     .container{
         background: linear-gradient(30deg, rgb(67, 67, 110), Gray, rgb(111, 111, 87), rgb(125, 98, 102), rgb(70, 100, 70), rgb(141, 90, 90),rgb(117, 96, 96));
@@ -175,6 +191,33 @@ footer ul li:hover{
         width: 100%;
         height: 45em;
     }
+
+    .intro p{
+        font-size: 15px;
+        width: 10em;
+    }
+
+    .start img{
+        position: absolute;
+        top: 90%;
+        left: 10%;
+    }
+
+.box1{
+    background-color: rgb(46, 92, 122);
+    width: 10em;
+    padding: 15px;
+    border-radius: 10px;
+    height: 13em;
+    color: #fff;
+}
+
+.box1 img{
+    width: 140px;
+    margin-left: 5px;
+    margin-top: 4em;
+    border-bottom-right-radius: 40px;
+}
 
     footer ul li:hover{
         color: gold;
@@ -196,19 +239,21 @@ footer ul li:hover{
 
     footer img{
         position: absolute;
-        width: 30em;
-        left: 14.6%;
+        width: 17em;
+        left: 27%;
         height: 35%;
         z-index: -1;
+        top: 60%;
     }
     footer{
         background-color: rgb(47, 45, 45);
         color: #fff;
         display: flex;
         justify-content: space-between;
-        gap: 70px;
-        padding: 2em 4em;
+        gap: 7px;
+        padding: 1em;
         backdrop-filter: opacity(40%);
+        width: 100%;
     }
     
     footer ul{
@@ -225,11 +270,12 @@ footer ul li:hover{
 
     .service{
         width: 100%;
+        padding: 10px 40px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 30px;
+        gap: 10px;
         margin-bottom: 3em;
         margin-top: 9em;
     }
@@ -237,6 +283,6 @@ footer ul li:hover{
     .v, .d{
         display: flex;
         flex-direction: column;
-        gap: 37px;
+        gap: 35px;
     }
 }
